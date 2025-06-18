@@ -26,6 +26,7 @@ This chart bootstraps a [Jenkins](https://github.com/bitnami/containers/tree/mai
 - Helm 3.8.0+
 - PV provisioner support in the underlying infrastructure
 - ReadWriteMany volumes for deployment scaling
+- changes
 
 ## Installing the Chart
 
