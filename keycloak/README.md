@@ -26,7 +26,7 @@ This chart bootstraps a [Keycloak](https://github.com/bitnami/containers/tree/ma
 
 - Kubernetes 1.23+
 - Helm 3.8.0+
-
+- Helmcharts
 ## Installing the Chart
 
 To install the chart with the release name `my-release`:
