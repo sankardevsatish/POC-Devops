@@ -46,3 +46,13 @@ resource "cloudflare_origin_ca_certificate" "origin_cert" {
   request_type       = "origin-rsa"
 }
 
+resource "local_file" "origin_cert" {
+  content  = cloudflare_origin_ca_certificate.origin_cert.certificate
+  filename = "${path.module}/origin_certificate.pem"
+}
+
+resource "local_file" "private_key" {
+  content  = tls_private_key.example.private_key_pem
+  filename = "${path.module}/private_key.pem"
+}
+
